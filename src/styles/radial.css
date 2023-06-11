@@ -1,0 +1,16 @@
+.radial-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+
+}
+
+.radial-items {
+    display: flex;
+    justify-content: center;
+}
+
+.radial-item {
+    text-align: center;
+    width: 80px;
+}

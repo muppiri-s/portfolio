@@ -1,38 +1,39 @@
-.App {
+/* Skills container */
+.skills-container {
   text-align: center;
+  margin-top: 30%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.centered-heading {
+  margin-top: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.boxes-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.box {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 0 1.5rem;
 }
 
-.App-link {
-  color: #61dafb;
+.icon img {
+  width: 50px;
+  height: 50px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.divider {
+  width: 1px;
+  height: 50px;
+  background-color: #333;
+}
+
+.text {
+  margin-top: 0.5rem;
+  font-size: 1rem;
 }

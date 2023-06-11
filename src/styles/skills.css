@@ -1,0 +1,21 @@
+.parallax-bg2 {
+    padding: 50px 0;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    background-image: url('../images/pink.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.skills-heading {
+    align-items: center;
+    text-align: center;
+}
+
+.skills-heading::first-letter {
+    font-size: 2rem;
+    color: rgb(197, 103, 155);
+}
