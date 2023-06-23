@@ -1,23 +1,41 @@
+import React from 'react';
 import './App.css';
+import './global.css';
 
 import Home from './components/home';
 import About from './components/about';
-import Education from './components/education';
+import Projects from './components/projects';
+import Experience from './components/experience';
 import Contact from './components/contact';
 import Skills from './components/skills';
-import Photos from './components/photography';
+import Test from './components/test';
 
-function App() {
+const App = () => {
+  const handleArrowClick = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   return (
     <>
-      <Home />
-      <About />
-      <Skills />
-      <Education />
-      <Photos />
-      <Contact />
+      <div className='header-wrapper'>
+        <Home />
+      </div>
+      <div className='container'>
+        <About />
+        <Test />
+        <Projects />
+        <Experience />
+        <Skills />
+        <Contact />
+      </div>
+      <footer>
+        <button className="scroll-to-top" onClick={handleArrowClick}>
+          YOU'VE REACHED THE END, GO BACK TO TOP!
+        </button>
+      </footer>
+
     </>
   );
-}
+};
 
 export default App;

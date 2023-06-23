@@ -1,39 +1,61 @@
-/* Skills container */
-.skills-container {
-  text-align: center;
-  margin-top: 30%;
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
 }
 
-.centered-heading {
-  margin-top: 0;
+html {
+  font-size: 58%;
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+
+  @media only screen and (max-width: 62.5em) {
+    font-size: 51.25%;
+  }
+
+  @media only screen and (max-width: 56.25em) {
+    font-size: 49%;
+  }
+
+  @media only screen and (max-width: 37.5em) {
+    font-size: 46%;
+  }
+
+  @media only screen and (min-width: 140.5em) {
+    font-size: 75%;
+  }
 }
 
-.boxes-container {
+body {
+  font-family: sans-serif, sans-serif;
+  font-size: 1.6rem;
+  overflow-x: hidden;
+  background: #ffffff;
+  background-size: 400% 400%;
+}
+
+.header-wrapper {
+  display: grid;
+  grid-template-columns: 1fr repeat(12, minmax(min-content, 10rem)) 1fr;
+  position: relative;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr repeat(12, minmax(min-content, 10rem)) 1fr;
+}
+
+footer {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  margin-top: 2rem;
-}
-
-.box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0 1.5rem;
-}
-
-.icon img {
-  width: 50px;
-  height: 50px;
-}
-
-.divider {
-  width: 1px;
-  height: 50px;
-  background-color: #333;
-}
-
-.text {
-  margin-top: 0.5rem;
-  font-size: 1rem;
+  width: 100%;
+  margin-top: 8rem;
+  padding: 3rem 6rem;
+  border-top: 1px solid hsla(0, 0%, 76.9%, .25);
 }

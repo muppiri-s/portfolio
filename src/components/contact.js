@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react';
-import { Instagram, LinkedIn, GitHub, KeyboardArrowUp } from '@mui/icons-material';
+import React from 'react';
+import { Instagram, LinkedIn, GitHub } from '@mui/icons-material';
 
 import '../styles/contact.css';
 import '../styles/scroll.css';
@@ -9,53 +9,27 @@ const Contact = () => {
         window.open(url, '_blank');
     };
 
-    const handleArrowClick = () => {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-    };
-
-    const [showArrow, setShowArrow] = useState(false);
-
-    const handleScroll = () => {
-        const scrollTop = document.documentElement.scrollTop;
-        const shouldShowArrow = scrollTop > 0;
-        setShowArrow(shouldShowArrow);
-    };
-
-    useEffect(() => {
-        window.addEventListener('scroll', handleScroll);
-        return () => {
-            window.removeEventListener('scroll', handleScroll);
-        };
-    }, []);
-
     return (
-        <>
-            <div className='contact-card'>
-                <div className='contact-title'>
-                    <span>Let's<br />talk.</span>
-                </div>
-                <div className='contact-details'>
-                    <a href="mailto:sahithimuppiri@gmail.com">sahithimuppiri@gmail.com</a>
-                    <span>+1 (260) 804-1404</span>
-                    <div className='contact-icons'>
-                        <button className="icon-button" onClick={() => handleLinkClick('https://www.instagram.com/')}>
-                            <Instagram />
-                        </button>
-                        <button className="icon-button" onClick={() => handleLinkClick('https://www.linkedin.com/')}>
-                            <LinkedIn />
-                        </button>
-                        <button className="icon-button" onClick={() => handleLinkClick('https://github.com/')}>
-                            <GitHub />
-                        </button>
-                    </div>
-                </div>
+        <div className='contact-container'>
+            <h2>Buh-Bye <small>👋</small></h2>
+            <div className='contact-title'>
+                <h3>Thank's for stopping by, I am actively searching for opportunities to join a team that shares similar skills and goals. If you believe we could be a good fit together, please
+                    give a call at <span className="highlight">
+                        +1 260 804-1404</span> or <a href="mailto:example@example.com">email me</a>.</h3>
             </div>
-            {showArrow && (
-                <button className="scroll-to-top" onClick={handleArrowClick}>
-                    <KeyboardArrowUp />
+            <div className='contact-icons'>
+                <h2>I'm available at</h2>
+                <button className="icon-button" onClick={() => handleLinkClick('https://www.instagram.com/')}>
+                    <Instagram />
                 </button>
-            )}
-        </>
+                <button className="icon-button" onClick={() => handleLinkClick('https://www.linkedin.com/')}>
+                    <LinkedIn />
+                </button>
+                <button className="icon-button" onClick={() => handleLinkClick('https://github.com/')}>
+                    <GitHub />
+                </button>
+            </div>
+        </div>
     );
 };
 

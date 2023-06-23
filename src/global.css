@@ -1,0 +1,20 @@
+/* colors */
+:root {
+    --color-purple: #39333fd3;
+}
+
+/* Fonts */
+@font-face {
+    font-family: "Autography";
+    src: url("../src/assets/Autography.otf");
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url("../src/assets/Poppins-Light.ttf");
+}
+
+@font-face {
+    font-family: "MarkPro";
+    src: url("../src/assets/Mark-Pro.ttf");
+}
