@@ -1,12 +1,14 @@
+@import url('./styles/text_animation.css');
+
 /* colors */
 :root {
-    --color-purple: #39333fd3;
-}
-
-/* Fonts */
-@font-face {
-    font-family: "Autography";
-    src: url("../src/assets/Autography.otf");
+    --color-black: #000000;
+    --color-night: #050810;
+    --color-dark: #1B2430;
+    --color-navy: #51557E;
+    --color-purple: #816797;
+    --color-gray: #c4c4c4;
+    --color-white: #ffffff;
 }
 
 @font-face {
@@ -17,4 +19,39 @@
 @font-face {
     font-family: "MarkPro";
     src: url("../src/assets/Mark-Pro.ttf");
+}
+
+@font-face {
+    font-family: "Lato";
+    src: url("../src/assets/Lato-Thin.ttf");
+}
+
+/* Fonts */
+h1 {
+    font-family: MarkPro;
+    font-size: 8em;
+}
+
+h2 {
+    font-size: 4.5rem;
+    font-weight: 100;
+    line-height: 130.4%;
+    font-family: Lato;
+}
+
+h3 {
+    font-size: 2em;
+    font-family: Lato;
+}
+
+h4,
+h5,
+h6 {
+    font-family: Lato;
+    font-size: 1em;
+}
+
+p, li {
+    font-family: Poppins;
+    color: var(--color-gray);
 }

@@ -1,0 +1,41 @@
+/* Anchor animation */
+a {
+    cursor: pointer;
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    padding-bottom: 1rem;
+}
+
+a::after {
+    display: block;
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 50%;
+    height: 1px;
+    background: var(--after-background-color, #fff);
+    transition: all 0.3s ease;
+}
+
+a:hover::after,
+a:focus::after {
+    width: 100%;
+}
+
+/* h2 Animation */
+h2 {
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+h2::after {
+    content: "";
+    position: absolute;
+    bottom: -0.5rem;
+    left: 0;
+    width: 40%;
+    height: 2px;
+    background-image: linear-gradient(to right, var(--color-dark), var(--color-navy), var(--color-purple), var(--color-dark));
+}

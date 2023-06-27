@@ -1,0 +1,81 @@
+.skill-container {
+    grid-column: 1/15;
+    display: grid;
+    grid-template-columns: 1fr repeat(12, minmax(min-content, 10rem)) 1fr;
+    padding: 8rem 0;
+}
+
+.skill-heading {
+    grid-column: 2/14;
+}
+
+.skill-wrapper {
+    grid-column: 1/15;
+    overflow-x: hidden;
+    margin-top: 8rem;
+    margin-bottom: 4rem;
+}
+
+.skill-row {
+    width: max-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card {
+    background-image: linear-gradient(var(--color-purple), var(--color-dark));
+    border-radius: 2rem;
+    padding: 1rem;
+    margin: 1.5rem;
+    width: 18rem;
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-h4 {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+}
+
+.card-anime1 {
+    animation: cardAnimation1 10s ease-in-out infinite alternate;
+}
+
+.card-anime2 {
+    animation: cardAnimation2 10s ease-in-out infinite alternate;
+}
+
+.card-anime1:hover,
+.card-anime2:hover {
+    animation-play-state: paused;
+}
+
+@keyframes cardAnimation1 {
+    from {
+        transform: translateX(-36%);
+    }
+
+    to {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes cardAnimation2 {
+    from {
+        transform: translateX(0%);
+    }
+
+    to {
+        transform: translateX(-36%);
+    }
+}
+
+@media only screen and (max-width: 57em) {
+    .skill-row {
+        padding: 0 4rem;
+    }
+}

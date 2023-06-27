@@ -1,66 +1,62 @@
 .contact-container {
     grid-column: 2/14;
     padding: 0 6rem;
-    margin-top: 12rem;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
 }
 
-.contact-container h2 {
-   font-size: 4.5rem;
-    line-height: 130.4%;
-    letter-spacing: -0.06em;
-    color: var(--color-gray);
-    font-weight: 100;
-    margin-top: 4rem;
+.contact-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+}
+
+.bye-img {
+    grid-column: 1;
+    height: 30em;
+}
+
+.bye-img img {
+    height: 100%;
 }
 
 .contact-title {
-    line-height: 130.4%;
-    letter-spacing: -0.06em;
-    color: #c4c4c4;
-    margin-top: 3rem;
+    grid-column: 2;
+    margin-top: 8em;
+    text-align: justify;
+}
+
+.contact-title p{
+    margin-bottom: 1.5rem;
 }
 
 .contact-icons {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 4rem;
-    grid-gap: 2rem;
-    gap: 2rem;
-    flex-wrap: wrap;
+    margin-top: 5rem;
     max-width: 40rem;
+    justify-content: space-between;
 }
 
-.highlight {
-    background-color: yellow;
-}
-
-a {
-    color: blue;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-.icon-button {
+.icon {
     background-color: transparent;
     border: none;
     cursor: pointer;
     outline: none;
+    margin-right: 1em;
 }
 
-.icon-button:hover {
-    animation: bounce 0.4s infinite alternate;
+.icon.instagram:hover {
+    color: #C13584;
 }
 
-@keyframes bounce {
-    0% {
-        transform: translateY(0);
-    }
+.icon.linkedin:hover {
+    color: #0077B5;
+}
 
-    100% {
-        transform: translateY(-5px);
-    }
+.icon.github:hover {
+    color: #171515;
+}
+
+.icon::after {
+    display: none;
 }

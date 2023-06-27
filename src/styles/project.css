@@ -1,0 +1,72 @@
+.projects-container {
+    grid-column: 2/14;
+    padding: 8rem 0;
+}
+
+.projects-content {
+    display: grid;
+    margin: 8em 8em;
+}
+
+.proj-card {
+    background: linear-gradient(to bottom, var(--color-dark), var(--color-night));
+    border-radius: 5rem;
+    padding: 5rem 5rem;
+    margin: 2rem 2rem;
+    display: flex;
+    align-items: center;
+    border: 0.2rem solid var(--color-dark);
+    box-sizing: border-box;
+    backdrop-filter: blur(54px);
+    position: relative;
+}
+
+.proj-tech {
+    margin-right: 6rem;
+}
+
+.proj-tech h4 {
+    transform: rotate(180deg);
+    writing-mode: tb-rl;
+    line-height: 92.4%;
+    letter-spacing: 0.19em;
+    color: var(--color-gray);
+    line-height: 120%;
+}
+
+.proj-img-container {
+    width: 35rem;
+    height: 45rem;
+    background-size: cover;
+    position: relative;
+    border-radius: 5.3rem;
+    overflow: hidden;
+}
+
+canvas {
+    position: absolute;
+    z-index: 0;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.proj-img-container>div {
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-gray);
+    object-fit: cover;
+    border-radius: 7rem;
+    overflow: hidden;
+}
+
+.proj-text {
+    margin-left: 5rem;
+}
+
+.proj-text h3 {
+    margin-bottom: 1rem;
+}
+
+.proj-text p {
+    margin-bottom: 3rem;
+}
