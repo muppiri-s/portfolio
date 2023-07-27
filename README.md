@@ -20,24 +20,6 @@ The live version of the website can be accessed at [https://muppiri.me/](https:/
 
 My Portfolio is a personal website designed to introduce myself and showcase my abilities as a developer. The website serves as a digital resume and a platform to display the projects I've worked on. It allows visitors to get a glimpse of my skills, experience, and passion for coding and design.
 
-## Project Structure
-
-```
-- parent directory
-  - assets (contains fonts)
-  - components (contains React components)
-    - home (home page component)
-    - about (about page component)
-    - projects (projects page component)
-    - experience (experience page component)
-    - skills (skills page component)
-  - images (contains images used in the project)
-  - styles (contains CSS styles)
-    - App.css
-    - global.css (global fonts styles and colors)
-  - index.js
-```
-
 ## Getting Started
 
 To run the website locally, follow these steps:
@@ -90,12 +72,5 @@ The project relies on the following dependencies:
 
 ## External Links
 
-- [Resume](https://drive.google.com/file/d/15i1LwbvaSKcDl7Gl1H862Le4BhXJsGuY/view?usp=sharing): Link to view and download the developer's resume.
+- [Resume](https://drive.google.com/file/d/15i1LwbvaSKcDl7Gl1H862Le4BhXJsGuY/view?usp=sharing): Link to view and download my resume.
 - Email: sahithi.muppiri@gmail.com
-
-## Contact
-
-For any inquiries or suggestions regarding this project, please feel free to reach out to me via email at sahithi.muppiri@gmail.com.
-
----
-*Note: This is a fictional README created based on the provided project details and may not represent the actual website content.*
